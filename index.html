@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors - Instructions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f4f4f4;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    code {
+      background: #ddd;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-    
-    <script src="app.js"></script>
+
+  <h1>Rock Paper Scissors (Console Game)</h1>
+
+  <h2>How to Play</h2>
+  <p>This game is played entirely in the browser console. You will play against the computer for <strong>5 rounds</strong>.</p>
+
+  <h3>Game Flow</h3>
+  <ol>
+    <li>Open your browser.</li>
+
+    <li>
+        <h3>Open the Console</h3>
+        <p>Use one of these shortcuts to open the browser console:</p>
+        <ul>
+            <li><strong>Windows / Linux:</strong> Press <code>F12</code> or <code>Ctrl + Shift + J</code></li>
+            <li><strong>Mac:</strong> Press <code>Cmd + Option + J</code></li>
+        </ul>
+        <p>Then click on the <strong>Console</strong> tab if it's not already open.</p>
+    </li>
+
+    <li>Refresh the Browser while the console is opened to run the game.</li>
+    <li>You will see a <code>prompt</code> asking for your move.</li>
+    <li>Enter one of the following:
+      <ul>
+        <li><strong>rock</strong></li>
+        <li><strong>paper</strong></li>
+        <li><strong>scissors</strong></li>
+      </ul>
+    </li>
+    <li>The computer will randomly choose its move.</li>
+    <li>The result of the round will be shown in the console.</li>
+  </ol>
+
+  <h3>Rounds</h3>
+  <p>The game runs for exactly <strong>5 rounds</strong>. You will see the prompt appear 5 times — once for each round.</p>
+
+  <h3>Winning Rules</h3>
+  <ul>
+    <li>Rock beats Scissors</li>
+    <li>Scissors beats Paper</li>
+    <li>Paper beats Rock</li>
+  </ul>
+
+  <h3>Scoring</h3>
+  <ul>
+    <li>Your score increases when you win a round.</li>
+    <li>The computer score increases when it wins.</li>
+    <li>Scores are displayed in the console after each round.</li>
+  </ul>
+
+  <h3>Game Result</h3>
+  <p>After 5 rounds:</p>
+  <ul>
+    <li>The final scores are displayed.</li>
+    <li>A winner is घोषित (You or Computer).</li>
+  </ul>
+
+  <h2>Technical Notes</h2>
+  <ul>
+    <li>The game uses <code>prompt()</code> for input.</li>
+    <li>The computer choice is generated using <code>Math.random()</code>.</li>
+    <li>The game logic runs entirely in JavaScript.</li>
+  </ul>
+  <script src="app.js"></script>
 </body>
 </html>

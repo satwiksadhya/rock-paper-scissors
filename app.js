@@ -1,7 +1,5 @@
-console.log("connected")
-
 let humanScore = 0;
-let ComputerScore = 0;
+let computerScore = 0;
 
 function getComputerChoice(){
     let computerChoice = Math.random();
@@ -40,4 +38,32 @@ function getHumanChoice(){
 
 }
 
+function playRound(humanChoice, computerChoice){
+    if((humanChoice === "Rock" && computerChoice === "Scissors")||(humanChoice === "Paper" && computerChoice === "Rock") || (humanChoice === "Scissors" && computerChoice === "Paper")){
+        console.log("You Won!");
+        console.log("Your Score: " + ++humanScore);
+        if(computerScore > 0){
+            console.log("Computer Score: " + --computerScore);
+        }
+        else{
+            console.log("Computer Score: " + computerScore);
+        }
+    }
+    else if(humanChoice === computerChoice){
+        console.log("Tie!");
+        console.log("Your Score: " + humanScore);
+        console.log("Computer Score: " + computerScore);
+    }
+    else{
+        console.log("You Lose!");
+        console.log("Computer Score: " + ++computerScore);
+        if(humanScore > 0){
+            console.log("Your Score: " + --humanScore);
+        }
+        else{
+            console.log("Your Score: " + humanScore);
+        }
+    }
+}
 
+playRound(getHumanChoice(),getComputerChoice());

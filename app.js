@@ -18,7 +18,7 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let humanChoice = prompt("Enter your move").toUpperCase();
+    let humanChoice = prompt("Enter your move (press cancel to read instructions or stop the game)").toUpperCase();
     if(humanChoice === "ROCK"){
         console.log("Your move: Rock");
         return "Rock";
